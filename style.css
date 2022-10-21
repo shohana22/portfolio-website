@@ -37,6 +37,11 @@ body{
     display: flex;
     justify-content: center;
 }
+
+.margin{
+    margin-top: 100px;
+    color: black;
+}
 /*Header css*/
 .hero-section{
     padding: 100px 0px 0px;
@@ -62,8 +67,7 @@ body{
 .animated{
     font-weight: 500;
     font-size: 40px;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
 
 .hero-text{
@@ -108,11 +112,14 @@ body{
 
 .features-section{
     padding: 100px 0px 0px;
+    margin-top: 40px;
 }
 
 .my-card{
     padding: 45px;
     box-shadow: 10px 10px 10px #1c1e22, -10px -10px 19px #262a2e;
+    border-radius: 30px;
+    transition: 0.5s;
 }
 
 .my-card .fa-solid {
@@ -120,12 +127,33 @@ body{
     margin-bottom: 25px;
     color: #ff014f;
 }
+
+.my-card .fa-arrow-right-long {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #ff014f;
+    transition: 0.3s;
+}
+
+.my-card:hover .fa-arrow-right-long{
+    font-size: 50px;
+}
 /*secend-features-section*/
+.secend-features-section{
+    margin-top: 50px;
+}
 .mypicture-text-grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 30px;
 }
+
+.my-card:hover{
+    padding: 35px 50px;
+    box-shadow: 10px 10px 10px #262a2e, -10px -10px 19px  #1c1e22;
+    border-radius: 30px;
+}
+
 .image{
     color:#ff014f
 }
@@ -137,4 +165,36 @@ body{
 }
 .image-text p:hover{
     color: #ff014f;
+}
+/*Contect-section*/
+
+.contact-section{
+    margin-top: 50px;
+}
+
+.contact-info img{
+    border-radius: 10px;
+}
+
+.contact-info h2{
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 20PX;
+}
+
+.contact-info p{
+    color: #878e99;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.contact-info ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    color: #878e99;
+}
+
+.fa-mobile-screen .fa-envelope-open-text{
+    font-size: 30px;
 }
